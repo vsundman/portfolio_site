@@ -3,9 +3,13 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?> </title>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="wp-content/themes/portfolio-theme/js/hamburgermenu.js" type="text/javascript" ></script> -->
 	<meta name="viewport" content="width=device-width">
 	<?php wp_head(); //HOOK. needed for plugins and admin bar to work ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	
+	
 
 	<!-- HTML5 shiv -->
 	<!--[if lt IE 9]>
@@ -47,24 +51,8 @@
 				
 			</h1> 
 		</div>
-
-		<button class="hamburger">&#9776;</button>
-		  <button class="cross">&#735;</button>
-
-		<?php wp_nav_menu( array( 
-				'theme_location' => 'main_menu', /*registered in functions.php*/
-				'container'       => 'nav', 
-				'menu_class'      => 'nav', 
-				'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
-
-	
-		 ) ); ?>
+<?php vs_hamburger(); ?>
 
 		
-
-
-
-
-
-
 	</header>
+

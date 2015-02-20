@@ -1,18 +1,17 @@
-	$(document).ready function(){
+	$(function(){
 		$( ".cross" ).hide();
-		$( ".menu-main-menu-container" ).hide();
+		$( ".menu" ).hide();
 		$( ".hamburger" ).click(function() {
-			$( ".menu-main-menu-container" ).slideToggle( "slow", function() {
+			$( ".menu" ).slideToggle( "slow", function() {
 				$( ".hamburger" ).hide();
 				$( ".cross" ).show();
 				});
 		});
 
 		$( ".cross" ).click(function() {
-			$( ".menu-main-menu-container" ).slideToggle( "slow", function() {
+			$( ".menu" ).slideToggle( "slow", function() {
 				$( ".cross" ).hide();
 				$( ".hamburger" ).show();
 				});
 			});
-
-	}
+});
