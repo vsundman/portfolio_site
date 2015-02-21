@@ -10,13 +10,7 @@
 	<main id="content">
 
 <div id="home-wrap">
-	<!-- SLIDER OR DEMO REEL HERE -->
-	<section id="slide-space">
-			<?php	vs_slider();?>
-
-			
-	</section><!-- end slider/demo reel -->
-
+	
 	<?php echo vs_recent_work(); ?>
 
 </div>

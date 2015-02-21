@@ -1,4 +1,5 @@
-	$(function(){
+	jQuery.noConflict();
+jQuery(document).ready(function($){
 		$( ".cross" ).hide();
 		$( ".menu" ).hide();
 		$( ".hamburger" ).click(function() {
@@ -14,4 +15,4 @@
 				$( ".hamburger" ).show();
 				});
 			});
-});
+})

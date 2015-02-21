@@ -254,32 +254,9 @@ function vs_slider_scripts(){
 /**
  * Hamburger Menu
  */
-add_action( 'wp_enqueue_scripts', 'vs_hamburger_script' );
-function vs_hamburger_script() {
-	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
-	wp_enqueue_script( 'hamburgermenu', get_template_directory_uri() . '/js/hamburgermenu.js', array(), '1.0', true );
-}
-/*WORK ON THIS!!!*/
-add_action();
-function vs_hamburger(){ ?>
-		<header class="ham-menu">
-			  <button class="hamburger">&#9776;</button>
-			  <button class="cross">&#735;</button>
-		</header>
+wp_register_script( 'hamburgermenu', get_template_directory_uri().'/js/hamburgermenu.js', array('jquery'), '', true );
 
-		  <div class="menu">
-			<?php wp_nav_menu( array( 
-					'theme_location' => 'main_menu', /*registered in functions.php*/
-					'container'       => 'nav', 
-					'menu_class'      => 'nav', 
-					'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
-			 ) ); ?>
-		</div>
-<?php
-
-}
-
-
+wp_enqueue_script( 'hamburgermenu' );
 
 
 

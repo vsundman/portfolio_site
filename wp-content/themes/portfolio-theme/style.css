@@ -115,6 +115,9 @@ div.menu ul li:hover {
 div.menu li a{
 	text-decoration:none; 
 	color:white;
+	line-height: 50px;
+	font-size: 24px;
+
 }
 div.menu li a:hover{
 	text-decoration:none; 
@@ -1218,7 +1221,6 @@ nav.menu-main-menu-container ul.nav li a{
 		width: 100%;
 		overflow: hidden;
 		position: relative;
-		min-height: 300px;
 		background-color: rgba(60,175,173,0.2);
 	}
 
