@@ -142,8 +142,6 @@ div.menu li a:hover{
 
 
 
-
-
 /*GLOBAL STYLES*/
 html #wpadminbar{
 	min-width: 270px;
@@ -1215,14 +1213,77 @@ nav.menu-main-menu-container ul.nav li a{
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 960px) {
+header.ham-menu{
+	width:100%; 
+	background:transparent; 
+	line-height:50px;
+	position: relative;
+	font-family: 'Abel';
+}
 
-	header{
-		font-family: abel, sans-serif;
-		width: 100%;
-		overflow: hidden;
-		position: relative;
-		background-color: rgba(60,175,173,0.2);
-	}
+.hamburger{
+	display: none;
+}
+.cross{
+	display: none;
+}
+div.menu nav{
+	z-index:1; 
+	font-weight:normal; 
+	font-size:0.8em; 
+	width:100%; 
+	background:#131313;  
+	position:relative; 
+	text-align:center;
+}
+div.menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+}
+div.menu li a {
+	display: block;   
+	padding:15px 0 15px 0; 
+	border-bottom:#1d1f20 1px solid;
+}
+div.menu li a:hover{
+	display: block;    
+	background:#181818; 
+	padding:15px 0 15px 0; 
+	border-bottom:#1d1f20 1px solid;
+}
+div.menu ul li { 
+	text-decoration:none;  
+	margin: 0px; 
+	color:#222;}
+div.menu ul li:hover {  
+	color: #222; 
+	text-decoration:none;
+}
+div.menu li a{
+	text-decoration:none; 
+	color:white;
+	line-height: 50px;
+	font-size: 24px;
+
+}
+div.menu li a:hover{
+	text-decoration:none; 
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #slider {
 	position: relative;
