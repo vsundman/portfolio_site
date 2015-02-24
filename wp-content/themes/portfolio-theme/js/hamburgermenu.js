@@ -15,4 +15,13 @@ jQuery(document).ready(function($){
 				$( ".hamburger" ).show();
 				});
 			});
+
+
+$(window).resize(function(){
+  if(w > 600 && menu.is(':hidden')) {
+    menu.removeAttr('style');}
+});
+
+
+
 })

@@ -1140,31 +1140,7 @@ ul.short-info-list{
 
 	/*MAIN NAV MENU*/
 
-nav.menu-main-menu-container ul.nav{
-	position: relative;
-	width: 100%;
-	text-align: center;
-	float: none;
-	padding: 0;
-	margin: 0;
-	background-color: #F8CBC8;
 
-}
-
- nav.menu-main-menu-container ul.nav li{
- 	display: inline-block;
-	font-size: 1.2rem;
-	margin: 0;
-	padding: 0;
-}
-
-
-nav.menu-main-menu-container ul.nav li a{
-	padding: 30px 10px;
-	min-width: 11rem;
-	margin: 0;
-	display: inline-block;
-}
 
 
 	/*WELCOME TEXT*/
@@ -1213,28 +1189,26 @@ nav.menu-main-menu-container ul.nav li a{
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 960px) {
+
+
 header.ham-menu{
 	width:100%; 
-	background:transparent; 
+	background:#1d1f20; 
+	min-height:50px; 
 	line-height:50px;
 	position: relative;
-	font-family: 'Abel';
+	
 }
 
-.hamburger{
-	display: none;
-}
-.cross{
-	display: none;
-}
 div.menu nav{
-	z-index:1; 
+	z-index:1000000; 
 	font-weight:normal; 
 	font-size:0.8em; 
 	width:100%; 
 	background:#131313;  
-	position:relative; 
+	position:absolute; 
 	text-align:center;
+	display: block;
 }
 div.menu ul {
 	margin: 0; 
@@ -1256,9 +1230,9 @@ div.menu li a:hover{
 div.menu ul li { 
 	text-decoration:none;  
 	margin: 0px; 
-	color:#222;}
+	color:#fff;}
 div.menu ul li:hover {  
-	color: #222; 
+	color: #fff; 
 	text-decoration:none;
 }
 div.menu li a{
@@ -1285,21 +1259,9 @@ div.menu li a:hover{
 
 
 
-#slider {
-	position: relative;
-	list-style: none;
-	overflow: hidden;
-	width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0;
-	max-width: 1000px;
-	max-height: 300px;
-	line-height: 0;
-	font-size:0;
-	margin-left: auto;
-    margin-right: auto;
-}
+
+
+
 	
 	.social_media{
 		font-size: 32px;
@@ -1332,36 +1294,6 @@ div.menu li a:hover{
 
 	/*MAIN NAV MENU*/
 
-	nav.menu-main-menu-container ul.nav {
-		display: block;
-		position: relative;
-		float: right;
-		bottom: 45px;
-		width: 100%;
-		background-color: transparent;
-
-	}
-	nav.menu-main-menu-container ul.nav li{
-		display: inline;
-		font-size: 18px;
-		padding: 0;
-		position: relative;
-		background-color: transparent;
-		margin: 0;
-
-	}
-	nav.menu-main-menu-container ul.nav li a{
-		text-decoration: none;
-		padding: 20px;
-		color: #000;
-		display: inline;
-		line-height: 0;
-
-	}
-	nav.menu-main-menu-container ul.nav li a:hover{
-		padding: 25px 20px;
-		color: #000;
-	}
 
 
 
@@ -1369,14 +1301,12 @@ div.menu li a:hover{
 	.welcome-wrap{
 		text-align: center;
 		clear: both;
-		position: absolute;
 		width: 100%;
-		bottom: 5px;
 		background-color: transparent;
 	}
 	.welcome-wrap h2 {
 		font-size: 4.0em;
-		padding: 15px 0 5px 0;
+		padding: 15px 0;
 	}
 
 
