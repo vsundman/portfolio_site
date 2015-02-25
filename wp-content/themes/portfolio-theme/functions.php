@@ -259,11 +259,38 @@ wp_register_script( 'hamburgermenu', get_template_directory_uri().'/js/hamburger
 wp_enqueue_script( 'hamburgermenu' );
 
 
+// single post on 
 
+function welcomepost(){
 
+//custom query to get the sticky post only and if none, return nothing
+	$sticky = get_option( 'sticky_posts' );
+	$welcome_query = new WP_Query( array(
+					  'post__in'  => $sticky,
+					  'posts_per_page' => 1,
+					  'ignore_sticky_posts' => 1,
+	) );
+	//custom loop
+	if (isset($sticky[0])):
 
+	 ?>
+	<section class="welcome">
+		<?php while ($welcome_query->have_posts()):
+			$welcome_query->the_post(); 
+			?>
 
+			<h3><?php the_title(); ?></h3>
+				
+			<?php the_post_thumbnail('thumbnail'); ?>
+			<p><?php the_content();?></p>
+	
+	<?php endwhile; ?>
+	
+	</section>
+	<?php endif; 
+	wp_reset_postdata(); //this prevents clashing with other loops 
 
+}// end function welcomepost
 
 
 

@@ -8,6 +8,7 @@
 <!-- end job desc area -->
 
 	<main id="content">
+<?php welcomepost(); ?>
 
 <div id="home-wrap">
 	

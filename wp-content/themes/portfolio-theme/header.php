@@ -30,24 +30,6 @@
 
 <body <?php body_class('custom'); ?>>
 
-
-		<header class="ham-menu">
-			  <button class="hamburger">&#9776;</button>
-			  <button class="cross">&#735;</button>
-		</header>
-
-		  <div class="menu">
-			<?php wp_nav_menu( array( 
-					'theme_location' => 'main_menu', /*registered in functions.php*/
-					'container'       => 'nav', 
-					'menu_class'      => 'nav', 
-					'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
-			 ) ); ?>
-		</div>
-
-
-
-
 	<header role="banner">
 		<?php wp_nav_menu( array( 
 				'theme_location' => 'social_media', /*registered in functions.php*/
@@ -58,8 +40,23 @@
 				'link_after'     => '</span>',
 
 			 ) ); ?>
+
+
+		  <div id="pattern" class="pattern">
+		  		<a href="#menu" class="menu-link">▼ Menu</a>
+			<?php wp_nav_menu( array( 
+					'theme_location' => 'main_menu', /*registered in functions.php*/
+					'container'       => 'nav', 
+					'menu_class'      => 'nav', 
+					'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
+					'container_id'  => 'menu',
+			 ) ); ?>
+		</div>
+
+
+			 
 			 		 <div class="welcome-wrap">
-			<h2><?php bloginfo('name'); ?></h2>
+			<a href="<?php echo esc_url( home_url( '/' ) );  ?>"><h2><?php bloginfo('name'); ?></h2></a>
 			<h3><?php wp_title(''); ?></h4>
 		</div>
 
