@@ -378,7 +378,7 @@ function vs_recent_work( $number = 3 ){
 					</a>
 					<div class="short-excerpt">
 					<?php the_post_thumbnail('thumbnail'); ?>
-						<p><?php the_excerpt();?></p>
+						<?php the_excerpt();?>
 					</div>
 					
 				</div>

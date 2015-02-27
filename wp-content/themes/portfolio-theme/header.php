@@ -63,7 +63,16 @@
 			 
 			 		 <div class="welcome-wrap">
 			<a href="<?php echo esc_url( home_url( '/' ) );  ?>"><h2><?php bloginfo('name'); ?></h2></a>
-			<h3><?php wp_title(''); ?></h3>
+			<h3>
+			<?php 
+			// Add the blog name
+			$title .= get_bloginfo( 'name', 'display' );
+			if (is_single()): echo 'Blog';
+			else: wp_title('');
+			endif;
+
+			?>
+			</h3>
 		</div>
 
 		

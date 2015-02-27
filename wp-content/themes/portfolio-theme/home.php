@@ -9,10 +9,13 @@
 <!-- end job desc area -->
 
 	<main id="content">
+	<!-- exclude sticky posts from blog -->
+		<?php $nosticky = new WP_Query( array( 
+					 'post__not_in' => get_option( 'sticky_posts' )	) ); ?>
 
-		<?php if( have_posts() ): //the loop?>
-
-		<?php while( have_posts() ): the_post(); ?>
+		<?php if( $nosticky->have_posts() ): //the loop?>
+	
+		<?php while( $nosticky->have_posts() ): $nosticky-> the_post(); ?>
 			<section <?php post_class(); ?>>
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<span><?php the_content(); ?> </span>
@@ -33,6 +36,7 @@
 			else: previous_posts_link('&larr; Newer Posts '); 
  			next_posts_link(' Older Posts &rarr;');
  			endif;
+
 			?>
 		</div>
 

@@ -40,9 +40,9 @@ License: GPLv3
 
 .hamburgerIcon {
   background:#E08E79;
-  height:70px;
+  height:50px;
   display:block;
-  width:70px;
+  width:55px;
   padding: 20px;
 }
 .hamburgerIcon span {
@@ -62,7 +62,7 @@ License: GPLv3
   font-size:0;
   background-color:#fff;
   float: left;
-  top: 30px;
+  top: 10px;
   transition:all .25s;
 }
 .hamburgerIcon span:before {
@@ -74,13 +74,12 @@ License: GPLv3
 
 
 
-
 		a.menu-link h2{
-			padding: 20px 0;
+			padding: 8px 0;
 			color: #222;
 			font-family: 'Open Sans Condensed', sans-serif;
 			position: relative;
-			top: 35px;
+			top: 25px;
 			text-align: center;
 			}
 			a.menu-link:hover{
@@ -90,14 +89,11 @@ License: GPLv3
 				text-decoration: none;
 				color: #fff;
 			}
+			#pattern a.active h2{
+				font-family: 'Open Sans Condensed', sans-serif;
+				color:#fff;
+			}
 
-
-
-
-
-		a.active{
-			color: #C5E0DC;
-		}
 		nav#menu {
 			clear: both;
 			-webkit-transition: all 0.3s ease-out;  
@@ -116,15 +112,18 @@ License: GPLv3
 		nav#menu ul {
 			margin: 0;
 			padding: 0;
-			border-top: 1px solid #483A3A;
+			border-top: 1px solid #E08E79;
 		}
 		nav#menu li a {
 			display: block;
-			padding: 25px 16px;
-			border-bottom: 1px solid #483A3A;
-			color: #C5E0DC;
+			padding: 30px 16px;
+			border-bottom: 1px solid #E08E79;
+			color: #774F38;
 			font-family: 'domine', serif;
-			font-size: 18px;
+			font-size: 20px;
+		}
+		nav#menu li a:hover{
+			background-color: #ECE5CE;
 		}
 		
 		@media screen and (min-width: 900px) {
@@ -200,7 +199,6 @@ a{
 }
 a:hover{
 	color: #3b3b3b;
-	text-decoration: underline;
 }
 table{
 	outline: 1px solid #C4C4C4;
@@ -423,7 +421,7 @@ span.genericon{
 section#short-info{
 	position: relative;
 	height: auto;
-	padding: 25px 0;
+	padding: 30px 0;
 	background-color: #C5E0DC;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
@@ -435,13 +433,13 @@ aside#sidebar{
 	width: 100%;
 }
 section.widget{
-	background-color: #F5EEDB;
+	background-color: #E08E79;
 	padding: 30px;
-	color: #583C37;
+	color: #fff;
 	font-size: 18px;
 	margin: 0 10px;
-	outline: 1px solid #483A3A;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 .widget li {
 	list-style-type: none;
@@ -449,11 +447,12 @@ section.widget{
 }
 .widget a{
 	text-decoration: none;
-	color: #483A3A;
+	color: #fff;
+	font-size: 25px;
 }
 .widget a:hover,
 .widget a:focus{
-	text-decoration: underline;
+	color: #222;
 }
 .widget-title{
 	padding-bottom: 10px;
@@ -461,7 +460,7 @@ section.widget{
 	text-align: center;
 	font-weight: normal;
 	font-family: 'Open Sans Condensed', sans-serif;
-	border-bottom: 2px solid #483A3A;
+	border-bottom: 1px solid #fff;
 	height: 40px;
 }
 
@@ -474,11 +473,12 @@ section.widget{
 #content {
 	max-width: 100%;
 	float: none;
-	line-height: 34px;
+	line-height: 44px;
 	font-size: 14px;
 	word-wrap: break-word;
 	margin: 0 10px;
 	clear: both;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 #content li{
 	list-style-type: none;
@@ -486,13 +486,15 @@ section.widget{
 #content img{
 	max-width: 100%;	/*for the extra wide images*/
 	height: auto;		/*for the extra wide images*/
+
 }
 #content figure{
 	max-width: 100%; /*for the extra wide images*/
 }
 
 section p{
-	padding-bottom: 15px;
+	padding-bottom: 25px;
+	font-size: 20px;
 }
 .sticky{
 	border: 3px solid #252733;
@@ -523,7 +525,7 @@ section p{
 }
 .pagination a:hover,
 .pagination span.current {
-	background: #3CAFAD;
+	background: #E08E79;
 	color: #fff;
 }
 .pagination span.pages{
@@ -579,6 +581,18 @@ section p{
 	box-shadow: 0px 0px 10px #fff;
 	border-radius: 50%;
 }
+/*welcome section*/
+section.welcome h3{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 30px;
+}
+section.welcome p{
+	text-align: center;
+	font-family: 'domine', serif;
+	font-size: 16px;
+}
+
 
 /*LATEST WORK*/
 .latest-work{
@@ -590,24 +604,24 @@ section p{
 	font-size: 4em;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
+	border-top: 1px solid #774F38;
 	font-weight: normal;
-	padding-bottom: 30px;
+	padding: 30px 0;
 	line-height: 50px;
 
 }
 .latest-work ul li a{
 	text-decoration: none;
-	font-family: 'domine', serif;
+	font-family: 'Open Sans Condensed', serif;
 	color: #000;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: normal;
 }
 .latest-work ul li h3{
-	padding-top: 6px;
-	background-color: #EEE8CE;
+	background-color: #F1D4AF;
 	font-weight: normal;
 	color: #000;
-	font-size: 16px;
+	font-size: 22px;
 }
 .latest-work li{
 	padding-bottom: 20px;
@@ -615,12 +629,17 @@ section p{
 	text-align: center;
 	float: left;
 }
+  .short-excerpt img{
+	margin: 10px auto;
+	text-align: center;
+}
 
-.work-info .short-excerpt {
-	text-align: left;
-	padding: 0 10px;
+
+.work-info .short-excerpt p{
+	text-align: center;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 20px;
+	font-family: 'domine', serif;
 }
 .latest-work iframe{
 	width: 100%;
@@ -628,6 +647,12 @@ section p{
 }
 
 /*ARCHIVE AND TAXONOMY PAGES (portfolio and filter)*/
+	body.tax-typework .welcome-wrap h3{
+		display: none;
+	}
+	nav#breadcrumbs{
+		font-size: 20px;
+	}
 
 .archive main#content{
 	width: 100%;
@@ -649,7 +674,7 @@ section p{
 }
 .archive section.filter h3{
 	width: 100%;
-	background-color: #3CAFAD;
+	background-color: #774F38;
 	color: #fff;
 	font-weight: normal;
 	padding: 10px 0;
@@ -699,21 +724,21 @@ section p{
 article.portfolio{
 	width: 100%;
 	float: left;
-	padding: 10px 5px;
-	min-height: 250px;
+	padding: 10px 0;
 	text-align: center;
-	background-color: #EEE8CE;
-	color: #000;
+	background-color: #C5E0DC;
+	color: #222;
+	margin-bottom: 5px;
 }
 .entry-title a{
 	text-decoration: none;
-	color: #000;
+	color: #222;
 	font-weight: normal;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 24px;
 }
 article.portfolio:hover{
-	background-color: #FAF8F1;
+	background-color: #ECE5CE;
 	color: #000;
 }
 .portfolio:hover .entry-title a{
