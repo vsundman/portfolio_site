@@ -36,20 +36,67 @@ License: GPLv3
 
 
 /*HAMBURGER MENU*/
-		a.menu-link {
-	  	    float: right;
-			display: block;
-			padding: 26px;
-			font-family: 'Abel', sans-serif;
-			font-size: 38px;
+/*icon*/
+
+.hamburgerIcon {
+  background:#E08E79;
+  height:70px;
+  display:block;
+  width:70px;
+  padding: 20px;
+}
+.hamburgerIcon span {
+  position:relative;
+  display:inline-block;
+}
+.hamburgerIcon span:after,
+.hamburgerIcon span:before {
+  content:"";
+  position:absolute;
+}
+.hamburgerIcon span,
+.hamburgerIcon span:after,
+.hamburgerIcon span:before {
+  height:5px;
+  width:100%;
+  font-size:0;
+  background-color:#fff;
+  float: left;
+  top: 30px;
+  transition:all .25s;
+}
+.hamburgerIcon span:before {
+  top:-15px;
+}
+.hamburgerIcon span:after {
+  top:15px;
+}
+
+
+
+
+		a.menu-link h2{
+			padding: 20px 0;
 			color: #222;
+			font-family: 'Open Sans Condensed', sans-serif;
+			position: relative;
+			top: 35px;
+			text-align: center;
 			}
 			a.menu-link:hover{
-				color: #DE564B;
 				text-decoration: none;
 			}
+			a.menu-link h2:hover{
+				text-decoration: none;
+				color: #fff;
+			}
+
+
+
+
+
 		a.active{
-			color: #DE564B;
+			color: #C5E0DC;
 		}
 		nav#menu {
 			clear: both;
@@ -75,7 +122,7 @@ License: GPLv3
 			display: block;
 			padding: 25px 16px;
 			border-bottom: 1px solid #483A3A;
-			color: #DE564B;
+			color: #C5E0DC;
 			font-family: 'domine', serif;
 			font-size: 18px;
 		}
@@ -108,7 +155,7 @@ html #wpadminbar{
 body{
 	font-family: 'domine', serif;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: rgba(236,229,206,0.4);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -229,9 +276,9 @@ main#content, aside#sidebar{
 	font-size: 12.0vw;
 	width: 100%;
 	text-align: center; 
-	line-height: 70px;
 	position: relative;
 	height: auto;
+	padding-top: 20px;
 
 }
 span.genericon{
@@ -352,27 +399,23 @@ span.genericon{
 	clear: both;
 	position: relative;
 	width: 100%;
-	margin-top: 50px;
+
 }
 .welcome-wrap h2, .welcome-wrap h3{
-	z-index: 0;
 	font-weight: normal;
+	padding: 10px 0;
 }
 .welcome-wrap h2 {
 	text-align: center;
 	width: 100%;
-	font-size: 2.2em;
+	font-size: 2.4em;
 	color: #222;
 	padding-top: 20px;
 }
-.welcome-wrap h3 {
-	position: relative;
-	font-size: 1.5em;
-	padding: 25px 0;
+.welcome-wrap a:hover{
+	text-decoration: none;
+	color: #000;
 }
-
-
-
 
 
 
@@ -381,7 +424,7 @@ section#short-info{
 	position: relative;
 	height: auto;
 	padding: 25px 0;
-	background-color: #8FB98B;
+	background-color: #C5E0DC;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
 	text-align: center;
@@ -417,7 +460,7 @@ section.widget{
 	font-size: 24px;
 	text-align: center;
 	font-weight: normal;
-	font-family: 'abel', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	border-bottom: 2px solid #483A3A;
 	height: 40px;
 }
@@ -491,7 +534,7 @@ section p{
 /*FOOTER*/
 .footer{
 	clear: both;
-	background-color: #8FB98B;
+	background-color: #C5E0DC;
 }
 
 .footer .social_media {
@@ -515,12 +558,8 @@ section p{
 }
 
 .footer nav ul.nav li{
-	font-size: 16px;
-	width: 50%;
-	float: left;
-	outline: 1px solid #8FB98B;
-	background-color: #F5EEDB;
-
+	font-size: 18px;
+	width: 100%;
 }
 .footer nav ul.nav li a{
 	text-decoration: none;
@@ -530,8 +569,7 @@ section p{
 	width: 100%;
 }
 .footer nav ul.nav li a:hover{
-	background-color: #EAE1C0;
-	color: #483A3A;
+	background-color: #ECE5CE;
 }
 .footer .social_media a:before{
 	color: #fff;
@@ -551,7 +589,7 @@ section p{
 .latest-work h2.title{
 	font-size: 4em;
 	text-align: center;
-	font-family: 'Abel', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: normal;
 	padding-bottom: 30px;
 	line-height: 50px;
@@ -635,7 +673,7 @@ section p{
 	margin-top: 15px;
 }
 .archive main section.filter a{
-	font-family: 'Abel';
+	font-family: 'Open Sans Condensed';
 	font-size: 26px;
 	color: #3B3B3B;
 	position: relative;
@@ -671,7 +709,7 @@ article.portfolio{
 	text-decoration: none;
 	color: #000;
 	font-weight: normal;
-	font-family: 'Abel', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 24px;
 }
 article.portfolio:hover{
@@ -912,7 +950,7 @@ ul.short-info-list{
 }
 .blog section.post h2 a{
 	color: #000;
-	font-family: 'Abel';
+	font-family: 'Open Sans Condensed';
 	font-size: 40px;
 }
 .blog .post h2{

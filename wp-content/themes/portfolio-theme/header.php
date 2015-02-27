@@ -22,13 +22,26 @@
 		<!-- favicon will go here -->
 
 		<!-- fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font-awesome/css/font-awesome.min.css">
 
 </head>
 
 <body <?php body_class('custom'); ?>>
+
+
+		  <div id="pattern" class="pattern menu">
+		  		<a href="#menu" class="menu-link hamburgerIcon"><span></span><h2>Menu</h2></a>
+			<?php wp_nav_menu( array( 
+					'theme_location' => 'main_menu', /*registered in functions.php*/
+					'container'       => 'nav', 
+					'menu_class'      => 'nav', 
+					'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
+					'container_id'  => 'menu',
+			 ) ); ?>
+		</div>
+
 
 	<header role="banner">
 		<?php wp_nav_menu( array( 
@@ -42,22 +55,15 @@
 			 ) ); ?>
 
 
-		  <div id="pattern" class="pattern">
-		  		<a href="#menu" class="menu-link">▼ Menu</a>
-			<?php wp_nav_menu( array( 
-					'theme_location' => 'main_menu', /*registered in functions.php*/
-					'container'       => 'nav', 
-					'menu_class'      => 'nav', 
-					'fallback_cb' 	=> 'false', /*if no menu assigned, do nothing*/
-					'container_id'  => 'menu',
-			 ) ); ?>
-		</div>
+
+
+
 
 
 			 
 			 		 <div class="welcome-wrap">
 			<a href="<?php echo esc_url( home_url( '/' ) );  ?>"><h2><?php bloginfo('name'); ?></h2></a>
-			<h3><?php wp_title(''); ?></h4>
+			<h3><?php wp_title(''); ?></h3>
 		</div>
 
 		
