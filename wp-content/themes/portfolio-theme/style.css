@@ -765,17 +765,13 @@ main.error{
 main.error h2.sorry{
 	font-size: 36px;
 	border-top: 1px solid #000;
-	padding-top: 20px;
+	border-bottom: 1px solid #000;
+	padding: 20px ;
 	color: #E04A12;
 	line-height: 60px;
 }
-.error p.sorry2{
-	font-size: 22px;
-	padding: 40px 0;
-	border-bottom: 1px solid #000;
-}
-.error .latest-work h2.title{
-	display: none;
+main.error a{
+	font-size: 30px;
 }
 
 /*SINGLE PAGE STYLES*/
@@ -795,10 +791,13 @@ main.error h2.sorry{
 .single article.portfolio h1, div.entry-content h1{
 	padding: 20px 0;
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 28px;
 	text-transform: uppercase;
 	display: table;
 	white-space: nowrap;
+	width: 100%;
+	text-align: center;
+	color: #E08E79;
 }
 	.single article.portfolio h1:before, div.entry-content h1:before, 
 	.single article.portfolio h1:after, div.entry-content h1:after {
@@ -806,10 +805,13 @@ main.error h2.sorry{
       content: '';
       display: table-cell;
       position: relative;
-      top: 0.5em;
+      top: 0.75em;
       width: 43%;
     }
-
+    .entry-content p{
+    	font-size: 18px;
+    	padding-bottom: 30px;
+    }
     .single article.portfolio h1:before, div.entry-content h1:before { right: 1.5%; }
     .single article.portfolio h1:after, div.entry-content h1:after { left: 1.5%; }
 
@@ -821,6 +823,44 @@ main.error h2.sorry{
 	margin-top: 15px;
 
 }
+ .single .postmeta span, .single .postmeta span a{
+ 	font-size: 16px;
+ 	color: #222;
+}
+
+/*COMMENT STYLES*/
+	.single .postmeta #comments{
+		border-top: 1px solid #774F38;
+		padding-top: 20px;
+	}
+	div#respond{
+		text-align: center;
+		width: 100%;
+	}
+	.comment-form{
+		
+		margin: 0 auto;
+	}
+	.comment-form input{
+		line-height: 40px;
+		margin-left: 20px;
+		font-size: 20px;
+	}
+	.comment-form p{
+		padding: 10px 0;
+
+	}
+	.comment-form label{
+		font-size: 20px;
+		display: block;
+
+	}
+
+
+
+
+
+
 
 
 blockquote{
