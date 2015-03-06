@@ -30,15 +30,10 @@
 
 			<div class="entry-content">
 			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-			
-			
+			<?php the_excerpt(); ?>
 
 
-						<p><?php the_excerpt(); ?></p>
-
-
-			
-							
+								
 
 			</div>
 

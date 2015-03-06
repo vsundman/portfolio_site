@@ -8,9 +8,13 @@
 <!-- end job desc area -->
 
 	<main id="content">
+	<section id="slide-space">
+	<?php vs_slider() ?>
+	</section>
 <?php welcomepost(); ?>
 
 <div id="home-wrap">
+
 	
 	<?php echo vs_recent_work(); ?>
 

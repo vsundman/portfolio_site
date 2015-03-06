@@ -403,12 +403,6 @@ add_filter( 'excerpt_length', 'custom_content_length', 999 );
 
 
 
-
-
-
-
-
-
 //RESUME CUSTOM FUNCTION! 
 // --download the google doc embedd plugin to get it to display AND have a download available
 // NOTE: it will not show up if you are on localhost, but it will if it is a live website

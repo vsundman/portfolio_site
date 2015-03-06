@@ -33,7 +33,98 @@ License: GPLv3
 
 
 == MEDIA QUERIES ==
+SLIDER*/
 
+
+#slide-space{
+	background-color: transparent;
+	padding: 10px 0;
+	width: 100%;
+	margin: 0;
+}
+
+
+#slider {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	max-width: 960px;
+	max-height: 250px;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	font-size:0;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+
+#slider ul{
+	margin: 0;
+	padding: 0;
+}
+
+#slider li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: auto;
+	left: 0;
+	top: 0;
+	background-image: none;
+}
+
+#slider li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+#slider img {
+	display: block;
+	float: left;
+	border: none;
+	width: 100%;
+	height: auto;
+
+}
+
+#slider .next{
+	position:absolute;		
+	top: 45%;
+	right:15px;
+	z-index:50;
+	text-indent:-99999em;
+	cursor: pointer;	
+	font-size: 16px;
+	height:0;
+	width: 20px;
+	border-top:solid 15px transparent;
+	border-bottom:solid 15px transparent;
+	border-left:solid 20px rgba(255,255,255,0.7);
+}
+#slider .next:hover{
+	right:12px;
+}
+#slider .prev{
+	position:absolute;
+	height:10%;
+	top:45%;
+	left:15px;
+	z-index:50;
+	text-indent:-99999em;
+	cursor:pointer;
+	font-size:16px;	
+	height:0;
+	width:20px;
+	border-top:solid 15px transparent;
+	border-bottom:solid 15px transparent;
+	border-right:solid 20px rgba(255,255,255,.7);		
+}
+#slider .prev:hover{
+	left:12px;
+}
 
 /*HAMBURGER MENU*/
 /*icon*/
@@ -881,6 +972,9 @@ blockquote cite:before {
 }
 
 /* CONTACT PAGE*/
+.page-id-7 h2{
+	display: none;
+}
 
 
 .page #ninja_forms_form_1{
@@ -995,6 +1089,21 @@ ul.short-info-list{
 	display: none;
 }
 /*BLOG*/
+/*go back button*/
+button{
+	padding: 25px 0;
+	font-size: 22px;
+	background-color: #C5E0DC;
+	border: none;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+button:hover{
+	cursor: pointer;
+	background-color: #E08E79;
+	color: #fff;
+}
 
 .blog section{
 	padding: 30px 30px 100px 30px;
@@ -1128,7 +1237,12 @@ ul.short-info-list{
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 960px) {
+button{
+	width: 50%;
+	padding: 20px 0;
 
+	display: block;
+}
 	.social_media{
 		font-size: 32px;
 		float: none;
@@ -1194,6 +1308,7 @@ ul.short-info-list{
 	}
 	.home #content{
 		width: 100%;
+			margin: 0;
 	}
 	main#content.error{
 		width: 100%;
@@ -1260,14 +1375,17 @@ ul.short-info-list{
 }
 .archive .portfolio div.entry-content{
   position: absolute;
-  bottom: -320px;
+  bottom: -300px;
   transition: all 0.5s ease;
   width: 100%;
   min-height: 200px;
 }
 .archive .portfolio:hover div.entry-content{
- 	 bottom: -55px;
+ 	 bottom: -20px;
  	 color: #000;
+}
+.archive .portfolio:hover div.entry-content p{
+	font-size: 16px;
 }
 .archive main#content a{
 	color: #222;
@@ -1276,7 +1394,7 @@ ul.short-info-list{
 	text-decoration: underline;
 }
 .archive h2{
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 .archive main li.current-cat a:after{
@@ -1290,6 +1408,8 @@ ul.short-info-list{
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 100%;
 }
+
+
 /*FOOTER*/
 .footer{
 	clear: both;

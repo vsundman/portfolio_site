@@ -8,12 +8,11 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class();//this adds extra classes to the post ?>>
 
 			<div class="entry-content">
+				<button onclick="history.go(-1);">Go Back</button>
+
 				<?php 
 					if( is_singular() ){	
-						?>
-					<button onclick="history.go(-1);">Back to Main Blog page</button>
-					
-					<h1><?php the_title(); ?> </h1>
+						?> <h1><?php the_title(); ?> </h1>
 						<?php the_content();
 					
 						

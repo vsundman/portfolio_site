@@ -18,7 +18,7 @@
 		<?php while( $nosticky->have_posts() ): $nosticky-> the_post(); ?>
 			<section <?php post_class(); ?>>
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<span><?php the_content(); ?> </span>
+				<span><?php the_excerpt(); ?> </span>
 				<span class="category">Category: <?php the_category(); ?> </span>
 				<span class="date"><?php the_date(); ?> </span>
 				<span><?php the_tags(); ?> </span>
