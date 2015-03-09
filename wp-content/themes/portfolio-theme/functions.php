@@ -298,23 +298,6 @@ function welcomepost(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //portfolio pieces CUSTOM FUNCTION
 
 add_action('init','vs_portfolio_pieces' );
