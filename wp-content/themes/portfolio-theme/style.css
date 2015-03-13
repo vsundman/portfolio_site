@@ -130,7 +130,7 @@ SLIDER*/
 /*icon*/
 
 .hamburgerIcon {
-  background:#E08E79;
+  background:#000;
   height:50px;
   display:block;
   width:55px;
@@ -165,57 +165,57 @@ SLIDER*/
 
 
 
-		a.menu-link h2{
-			padding: 8px 0;
-			color: #222;
-			font-family: 'Open Sans Condensed', sans-serif;
-			position: relative;
-			top: 25px;
-			text-align: center;
-			}
-			a.menu-link:hover{
-				text-decoration: none;
-			}
-			a.menu-link h2:hover{
-				text-decoration: none;
-				color: #fff;
-			}
-			#pattern a.active h2{
-				font-family: 'Open Sans Condensed', sans-serif;
-				color:#fff;
-			}
+a.menu-link h2{
+	padding: 8px 0;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: relative;
+	top: 25px;
+	text-align: center;
+	}
+	a.menu-link:hover{
+		text-decoration: none;
+	}
+	a.menu-link h2:hover{
+		text-decoration: none;
+		color: #fff;
+	}
+	#pattern a.active h2{
+		font-family: 'Open Sans Condensed', sans-serif;
+		color:#fff;
+	}
 
-		nav#menu {
-			clear: both;
-			-webkit-transition: all 0.3s ease-out;  
-			-moz-transition: all 0.3s ease-out;
-			-ms-transition: all 0.3s ease-out;
-			-o-transition: all 0.3s ease-out;
-			transition: all 0.3s ease-out;
-		}
-		.js nav#menu {
-			overflow: hidden;
-			max-height: 0;
-		}
-		nav#menu.active {
-			max-height: 100%;
-		}
-		nav#menu ul {
-			margin: 0;
-			padding: 0;
-			border-top: 1px solid #E08E79;
-		}
-		nav#menu li a {
-			display: block;
-			padding: 30px 16px;
-			border-bottom: 1px solid #E08E79;
-			color: #774F38;
-			font-family: 'domine', serif;
-			font-size: 20px;
-		}
-		nav#menu li a:hover{
-			background-color: #ECE5CE;
-		}
+nav#menu {
+	clear: both;
+	-webkit-transition: all 0.3s ease-out;  
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.js nav#menu {
+	overflow: hidden;
+	max-height: 0;
+}
+nav#menu.active {
+	max-height: 100%;
+}
+nav#menu ul {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #ABABAB;
+}
+nav#menu li a {
+	display: block;
+	padding: 30px 16px;
+	border-bottom: 1px solid #ABABAB;
+	color: #fff;
+	font-family: 'domine', serif;
+	font-size: 20px;
+}
+nav#menu li a:hover{
+	background-color: #ECE5CE;
+}
 		
 		
 
@@ -226,7 +226,7 @@ html #wpadminbar{
 body{
 	font-family: 'domine', serif;
 	margin: 0 auto;
-	background-color: rgba(236,229,206,0.4);
+	background-color: #2D2D2D;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -282,7 +282,7 @@ table tbody{
 	padding: 25px 10px;
 }
 table a{
-	color: #252733;
+	color: #ccc;
 }
 table a:hover{
 	color: #3b3b3b;
@@ -376,11 +376,11 @@ span.genericon{
 .social_media a:before{
 	font-family: "Genericons";
 	text-decoration: none;
-	color: #1a1e24;
+	color: #fff;
 	padding: 10px;
 }
 .social_media a:hover:before{
-	box-shadow: 0px 0px 10px #1A1E24;
+	box-shadow: 0px 0px 10px #ccc;
 	border-radius: 50%;
 }
 
@@ -464,6 +464,9 @@ span.genericon{
 
 
 /*WELCOME TEXT*/
+	.home .welcome-wrap h3{
+		display: none;
+	}
 .welcome-wrap{
 	text-align: center;
 	clear: both;
@@ -479,12 +482,12 @@ span.genericon{
 	text-align: center;
 	width: 100%;
 	font-size: 2.4em;
-	color: #222;
+	color: #FFFFFF;
 	padding-top: 20px;
 }
 .welcome-wrap a:hover{
 	text-decoration: none;
-	color: #000;
+	color: #ABABAB;
 }
 
 
@@ -494,8 +497,8 @@ section#short-info{
 	position: relative;
 	height: auto;
 	padding: 30px 0;
-	background-color: #C5E0DC;
-	border-bottom: 1px solid #ccc;
+	background-color: #000;
+	border-bottom: 1px solid #2D2D2D;
 	width: 100%;
 	text-align: center;
 }
@@ -505,7 +508,7 @@ aside#sidebar{
 	width: 100%;
 }
 section.widget{
-	background-color: #E08E79;
+	background-color: #000;
 	padding: 30px;
 	color: #fff;
 	font-size: 18px;
@@ -592,18 +595,18 @@ section p{
 .pagination a,
 .pagination span.current {
 	padding: 20px 35px;
-	color: #583C37;
+	color: #fff;
 	white-space: nowrap;
 	display: inline-block;
-	background: #F8CBC8; 
+	background: #634271; 
 	font-weight: normal;
 
 
 }
 .pagination a:hover,
 .pagination span.current {
-	background: #E08E79;
-	color: #fff;
+	background: #A27BB3;
+	color: #222;
 }
 .pagination span.pages{
 	font-size: 14px;
@@ -613,7 +616,8 @@ section p{
 /*FOOTER*/
 .footer{
 	clear: both;
-	background-color: #C5E0DC;
+	background-color: #634271;
+	text-align: center;
 }
 
 .footer .social_media {
@@ -642,23 +646,24 @@ section p{
 }
 .footer nav ul.nav li a{
 	text-decoration: none;
-	color: #483A3A;
+	color: #fff;
 	padding: 30px 0;
 	display: inline-block;
 	width: 100%;
 }
 .footer nav ul.nav li a:hover{
-	background-color: #ECE5CE;
+	background-color: #fff;
 }
 .footer .social_media a:before{
 	color: #fff;
 }
 
 .footer .social_media a:hover:before{
-	box-shadow: 0px 0px 10px #fff;
+	box-shadow: 0px 0px 10px #ccc;
 	border-radius: 50%;
 }
 /*welcome section*/
+
 section.welcome h3{
 	text-align: center;
 	font-size: 40px;
@@ -1158,9 +1163,7 @@ button:hover{
 
 
 @media only screen and (min-width: 550px){
-	header{
-		min-height: 200px;
-	}
+
 	/*TITLE STYLES*/
 	.social_media{
 		font-size: 42px;
@@ -1194,6 +1197,7 @@ button:hover{
 		}
 		
 	/*WELCOME TEXT*/
+
 	.welcome-wrap{
 		text-align: center;
 		clear: both;
@@ -1207,7 +1211,7 @@ button:hover{
 		bottom: 0;
 	}
 	.welcome-wrap h2 {
-		padding: 15px 0 5px 0;
+		padding: 25px 0;
 	}
 	.welcome-wrap h3 {
 		font-size: 2.0em;
@@ -1237,6 +1241,9 @@ button:hover{
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 960px) {
+		.home .welcome-wrap h3{
+		display: none;
+	}
 button{
 	width: 50%;
 	padding: 20px 0;
