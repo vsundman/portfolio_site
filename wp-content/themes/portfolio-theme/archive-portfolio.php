@@ -21,22 +21,20 @@
 		<?php while( have_posts() ): the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class();//this adds extra classes to the post ?>>
-
+<a href="<?php the_permalink(); ?>"> 
 			<h2 class="entry-title"> 
-				<a href="<?php the_permalink(); ?>"> 
+				
 					<?php the_title(); ?> 
-				</a>
+				
 			</h2>
 
 			<div class="entry-content">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+		<?php the_post_thumbnail('thumbnail'); ?>
 			<?php the_excerpt(); ?>
-
-
-								
+				
 
 			</div>
-
+</a>
 		</article><!-- end post -->
 
 		<?php endwhile; ?>

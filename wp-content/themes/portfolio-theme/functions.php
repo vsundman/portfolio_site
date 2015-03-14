@@ -358,10 +358,11 @@ function vs_recent_work( $number = 3 ){
 				<div class="work-info">
 					<a href="<?php the_permalink(); ?>">
 						<h3><?php the_title(); ?></h3>
-					</a>
+					
 					<div class="short-excerpt">
-					<?php the_post_thumbnail('thumbnail'); ?>
+					<?php the_post_thumbnail('medium'); ?>
 						<?php the_excerpt();?>
+						</a>
 					</div>
 					
 				</div>
