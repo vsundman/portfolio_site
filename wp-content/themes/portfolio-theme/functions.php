@@ -258,6 +258,13 @@ wp_register_script( 'hamburgermenu', get_template_directory_uri().'/js/hamburger
 
 wp_enqueue_script( 'hamburgermenu' );
 
+/**
+ * Cool Title
+ */
+wp_register_script( 'cooltitle', get_template_directory_uri().'/js/cooltitle.js', array('jquery'), '', true );
+wp_enqueue_script( 'cooltitle' );
+
+
 
 // single post on 
 

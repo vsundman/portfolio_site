@@ -58,7 +58,9 @@
 
 			 
 			 		 <div class="welcome-wrap">
-			<a href="<?php echo esc_url( home_url( '/' ) );  ?>"><h2><?php bloginfo('name'); ?></h2></a>
+			<a href="<?php echo esc_url( home_url( '/' ) );  ?>">
+			<h1>Valerie Sundman</h1>
+			</a>
 			<h3>
 			<?php 
 			// Add the blog name
