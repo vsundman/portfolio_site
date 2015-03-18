@@ -33,7 +33,9 @@ License: GPLv3
 
 
 == MEDIA QUERIES ==
-SLIDER*/
+
+
+/*SLIDER*/
 
 
 #slide-space{
@@ -347,6 +349,9 @@ main#content, aside#sidebar{
 	margin-top: 15px;
 }
 
+
+
+
 /*SOCIAL MEDIA ICONS- GENERICONS*/
 /*social media*/
 .social_media{
@@ -506,10 +511,6 @@ i{
 i.off {
 	color: rgba(46, 46, 46, 0.61);
   text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);}
-
-
-
-
 
 
 
@@ -696,7 +697,7 @@ section p{
 	width: 100%;
 }
 .footer nav ul.nav li a:hover{
-	background-color: #fff;
+	background-color: #815593;
 }
 .footer .social_media a:before{
 	color: #fff;
@@ -760,6 +761,8 @@ section.welcome p{
 .latest-work li{
 	text-align: center;
 	float: left;
+	width: 30%;
+	margin: 0 1%;
   height: 100%;
   overflow: hidden;
   border: 3px solid #222;
@@ -963,7 +966,6 @@ main.error a{
 	text-align: left;
 	border: none;
 	background-color: transparent;
-	color: #595959;
 }
 
     .entry-content p{
@@ -1234,12 +1236,6 @@ button:hover{
 
 }
 
-@media only screen and (max-width: 570px ){
-		.single iframe{
-		width: 100%;
-	}
-}
-
 
 @media only screen and (min-width: 550px){
 
@@ -1305,6 +1301,9 @@ button:hover{
 		text-align: center;
 
 }
+.footer .current-menu-item{
+	background-color: #815593;
+}
 
 }
 
@@ -1335,40 +1334,6 @@ button{
 	div.topnav {
 		padding-top: 10px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	/*JOB DESCRIPTION- custom field. to improve use meta box technique*/
 	section#short-info{
@@ -1433,7 +1398,7 @@ button{
 	
 /*LATEST WORK*/
 .latest-work li{
-	width: 31%;
+	width: 30%;
 	text-align: center;
 	float: left;
 	margin-left: 12px;

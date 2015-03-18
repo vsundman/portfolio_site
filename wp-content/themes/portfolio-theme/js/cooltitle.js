@@ -1,3 +1,5 @@
+	jQuery.noConflict();
+	
 var textHolder = document.getElementsByTagName('h1')[0],
   text = textHolder.innerHTML,
 	chars = text.length,

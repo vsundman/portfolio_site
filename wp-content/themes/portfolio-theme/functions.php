@@ -265,6 +265,13 @@ wp_register_script( 'cooltitle', get_template_directory_uri().'/js/cooltitle.js'
 wp_enqueue_script( 'cooltitle' );
 
 
+// DISABLE THE COOL TITLE SCRIPT ON LOGIN PAGE
+if( in_array( $_SERVER['PHP_SELF'], array( '/wp-login.php', '/wp-register.php' ) )):
+	wp_deregister_script( 'cooltitle' );
+endif;
+
+
+
 
 // single post on 
 
