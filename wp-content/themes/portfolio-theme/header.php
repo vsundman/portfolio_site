@@ -13,6 +13,7 @@
 
 	<!-- HTML5 shiv -->
 	<!--[if lt IE 9]>
+
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 	<![endif]-->
 
@@ -22,8 +23,9 @@
 		<!-- favicon will go here -->
 
 		<!-- fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Mallanna' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font-awesome/css/font-awesome.min.css">
 
 </head>

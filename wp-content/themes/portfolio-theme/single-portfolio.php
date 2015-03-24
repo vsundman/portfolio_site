@@ -12,7 +12,7 @@
 				<?php 
 					if( is_singular() ){	
 						?>
-						<?php the_content();
+						<section class="explain"><?php the_content();?></section> <?php 
 					
 						
 					}else{

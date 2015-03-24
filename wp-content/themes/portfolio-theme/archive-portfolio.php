@@ -19,9 +19,9 @@
 	<?php //THE LOOP
 		if( have_posts() ): ?>
 		<?php while( have_posts() ): the_post(); ?>
-
-		<article id="post-<?php the_ID(); ?>" <?php post_class();//this adds extra classes to the post ?>>
 <a href="<?php the_permalink(); ?>"> 
+		<article id="post-<?php the_ID(); ?>" <?php post_class();//this adds extra classes to the post ?>>
+
 			<h2 class="entry-title"> 
 				
 					<?php the_title(); ?> 
@@ -34,9 +34,9 @@
 				
 
 			</div>
-</a>
-		</article><!-- end post -->
 
+		</article><!-- end post -->
+</a>
 		<?php endwhile; ?>
 
 		<div class="pagination">

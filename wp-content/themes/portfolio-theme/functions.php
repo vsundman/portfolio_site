@@ -296,7 +296,7 @@ function welcomepost(){
 			<h3><?php the_title(); ?></h3>
 								
 			<?php the_post_thumbnail('thumbnail'); ?>
-			<p><?php the_content();?></p>
+			<?php the_content();?>
 	
 	<?php endwhile; ?>
 	
@@ -367,20 +367,22 @@ function vs_recent_work( $number = 3 ){
 		<ul>
 		<?php while ($portfolio_work_query->have_posts()):
 			$portfolio_work_query->the_post(); 
-			?>
-			<li>
+			?><a href="<?php the_permalink(); ?>">
+			<li>	
 				<div class="work-info">
-					<a href="<?php the_permalink(); ?>">
+				
 						<h3><?php the_title(); ?></h3>
 					
+
 					<div class="short-excerpt">
+				
 					<?php the_post_thumbnail('medium'); ?>
 						<?php the_excerpt();?>
-						</a>
+						
 					</div>
 					
-				</div>
-			</li>
+				</div>			</li></a>
+
 	
 		<?php endwhile; ?>
 		</ul>
